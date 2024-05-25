@@ -1,0 +1,390 @@
+/* INDEX.CSS Aziz Syed 301322427 May 18th 2024*/
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#main_title{
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+:root {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+a:hover {
+  color: #747bff;
+}
+
+button {
+  background-color: #f9f9f9;
+}
+}
+
+nav{
+  padding-top: 25px;
+  margin-right: 50px;
+  font-weight: 500;
+  text-decoration: inherit;
+}
+
+nav a{
+  font-weight: 500;
+  text-decoration: inherit;
+}
+
+nav a:hover{
+  font-weight:bold;
+  position: relative;
+}
+
+#item{
+  padding-right: 50px;
+  color:black;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+}
+
+#proj{
+  padding-right: 100px;
+  color:black;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+
+}
+
+#contact{
+  color:black;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  padding:5px 10px 7px 10px;
+  background-color: #ffda0b;
+  border-radius: 25px;
+  border: 3px solid black;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: 50px;
+}
+
+#top{
+  display: flex;
+  text-align: center;
+  font-size:x-large;
+  padding-bottom: 50px;
+
+}
+
+#highlight{
+  color: #ffda0b;
+}
+
+#highlight2{
+  color: #ecc904;
+}
+
+body{
+  background-color: #f2efe7;
+}
+
+#wrapper{
+	margin: auto;
+	width:80%;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item1{
+  font-size: 250%;
+  padding-left: 80px;
+}
+
+#college{
+  background-color: #35363a;
+  padding: 3px 5px 3px 5px;
+}
+
+#college1{
+  color:#ffffff;
+}
+
+#college2{
+  color: #d4e038;
+}
+
+#picture{
+  background-color: #ffda0b;
+  border: 0px solid black;
+  border-radius: 500px;
+  max-width: 120%;
+  height: auto;
+}
+
+#picture2{
+  background-color: #ffda0b;
+  border: 0px solid black;
+  border-radius: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+#goal{
+  text-align: center;
+  float: center;
+}
+
+#linkAbout{
+  color:#213547;
+  text-decoration: underline; 
+}
+
+#linkAbout:hover{
+  font-weight:bold;
+}
+
+#portfolio{
+  border: 5px solid black;
+  max-width: 120%;
+  height: auto;
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.grid-item2{
+  background-color: #d9d9d9;
+  border: 0px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.grid-item3{
+  background-color: #d9d9d9;
+  border: 0px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#pageTitle{
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#serviceTitle{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+#service{
+  font-size: x-large;
+  margin: auto;
+  width: 70%
+}
+
+#leftLogo{
+  max-width: 120%;
+  height: 75px;
+  margin-right: 50px;
+}
+
+#rightLogo{
+  max-width: 120%;
+  height: 75px;
+  margin-left: 50px;
+}
+
+#singleLogo{
+  max-width: 120%;
+  height: 75px;
+  margin-right: 25px;
+}
+
+#projects-desc{
+  font-size:215%;
+}
+
+label{
+  padding-top: 30px;
+  font-size: 140%;
+}
+
+input{
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #f2efe7;
+  outline: none;
+  margin-bottom: 5%;
+}
+
+input[type=text]{
+  max-width: 80%;
+  font-size: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #f2efe7 inset !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input[type="number"]{
+  max-width: 80%;
+  font-size: 100%;
+}
+
+#contactForm{
+  padding: 40px 30px 30px 50px;
+  border-top: 5px solid #213547;
+  border-left: 5px solid #213547;
+}
+
+textarea{
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: #f2efe7;
+  outline: none;
+  margin-bottom: 5%;
+  max-width: 80%;
+  font-size: 100%;
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+}
+
+input[type="submit"]{
+  padding:7px 10px 7px 10px;
+  background-color: #f2efe7;
+  border-radius: 25px;
+  font-size: large;
+  font-weight: bold;
+  border: 2px solid black;
+  margin-right:50px;
+}
+
+input[type="submit"]:hover{
+  border: 3px solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="reset"]{
+  padding:7px 10px 7px 10px;
+  background-color: #f2efe7;
+  border-radius: 25px;
+  font-size: large;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+input[type="reset"]:hover{
+  border: 3px solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact2{
+  padding: 40px 30px 30px 100px;
+  border-bottom: 5px solid #213547;
+  border-right: 5px solid #213547;
+
+}
+
+#contactTitle{
+  font-size: 200%;
+  font-weight: 400;
+  margin: auto;
+}
+
+#contactItem{
+  font-size: 130%;
+  font-weight: 400;
+  margin: 10px 0px 5px 20px;
+}
+
+#instaLogo{
+  max-width: 40px;
+  height: auto;
+  margin-right: 40px;
+}
+
+#faceLogo{
+  max-width: 30px;
+  height: auto;
+  margin-right: 40px;
+}
+
+#linkLogo{
+  max-width: 40px;
+  height: auto;
+}
+
+#logos{
+  display: flex;
+  align-items: center; 
+  justify-content: left; 
+}
