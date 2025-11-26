@@ -1,54 +1,69 @@
-/* about.jsx Aziz Syed 301322427 May 18th 2024*/
+// about.jsx
 
 import React from 'react';
-import Picture from '../src/sideShot.png';
-import Resume from '../src/AzizSyedResume.pdf';
+import Picture from '../src/person-pics/sideShot.png';
+import Resume from '../src/person-pics/AzizSyedResume.pdf';
 
-
-
-export default function About(){
+export default function About() {
   return (
-    <>
+    <main className="container section">
+      <header className="section-header">
+        <h1 className="section-title">
+          About <span className="highlight">Me</span>
+        </h1>
+        <p className="section-subtitle">
+          A Software Engineering Technology student with a strong focus on full-stack development,
+          cloud platforms, and modern engineering practices.
+        </p>
+      </header>
 
-    <div id="wrapper">
-    
-    <h1 id="pageTitle">More <span id="highlight">About Me</span>:</h1>
+      <div className="about-grid">
+        <div className="about-photo-wrapper">
+          <img src={Picture} alt="Aziz Syed" className="about-photo" />
+        </div>
 
-      <div class="grid">
+        <div className="about-content">
+          <p>
+            I’m currently enrolled in the{' '}
+            <strong>Software Engineering Technology program</strong> at{' '}
+            <span className="highlight-college">Centennial College</span> (Jan 2023 – Dec 2025),
+            where I’ve maintained a <strong>4.3/4.5 GPA</strong>. My coursework and projects have
+            given me hands-on experience with full-stack development, APIs, and cloud computing.
+          </p>
 
-        <img src={Picture} alt="picture" id="picture2" class="grid-item2"/>
+          <p>
+            I’ve worked with technologies such as <strong>React, Angular, Node.js, Spring Boot,
+            ASP.NET Core, GraphQL, MongoDB,</strong> and relational databases. I enjoy building
+            applications that are both technically solid and user-focused, and I’m comfortable
+            working across the stack—from UI to database and deployment.
+          </p>
 
+          <p>
+            I’ve also gained exposure to modern engineering practices, including Agile/Scrum, CI/CD,
+            containerization with <strong>Docker/Kubernetes</strong>, and infrastructure tools like{' '}
+            <strong>Terraform</strong>. These experiences have helped me understand how reliable,
+            scalable systems are built and maintained in real environments.
+          </p>
 
-        <h2 class="grid-item1">
-          Hello, My name is <span id="highlight">Aziz Syed</span>. 
-          <br/> 
-          I am currently enrolled in the  
+          <p>
+            Outside of academics, I stay involved as a <strong>peer mentor</strong>, a member of the
+            <strong> Software Engineering Club</strong>, and an active participant in hackathons and
+            coding competitions. I also volunteer as a sports coach and event organizer, which helps
+            me strengthen teamwork, leadership, and communication skills.
+          </p>
 
-          <span id="highlight"> Software Engineering and <br/> Technology</span> program <br/>at &nbsp; 
-          
-          <span id="college"><span id="college1">CENTENNIAL</span> <span id="college2">COLLEGE</span></span>.
-          <br/> 
-          <br/> 
-          At <span id="college"><span id="college1">CENTENNIAL</span></span>, I have acquired many <span id="highlight">valuable </span> 
-          programming <span id="highlight">skills</span> that would effectively <span id="highlight">transfer</span> over to real <span id="highlight">workspaces</span>.
-          <br/> 
-
-        </h2>
-
+          <div className="about-actions">
+            <a
+              href={Resume}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary"
+            >
+              Download My Updated Resume (PDF)
+            </a>
+          </div>
+        </div>
       </div>
-
-      <div class="grid">
-
-        <h2 class="grid-item1">
-        I enjoy playing <span id="highlight">sports</span>, video <span id="highlight">games</span>, and working on <span id="highlight">cars</span> in my spare time. My passion for <span id="highlight">technology</span> and <span id="highlight">problem-solving</span> drives me to excel <span id="highlight">academically</span> while maintaining a <span id="highlight">balanced</span> lifestyle.
-        Want to see my <span id="highlight">Resume</span>? Click <a href={Resume} target='_blank' id="linkAbout">Here</a>.
-        </h2>
-
-
-      </div>
-      
-    </div>
-    </>
-  )
-  
+    </main>
+  );
 }

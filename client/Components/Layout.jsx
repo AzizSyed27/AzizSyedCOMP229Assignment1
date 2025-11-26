@@ -1,30 +1,59 @@
-/* Layout.jsx Aziz Syed 301322427 May 18th 2024*/
+// Layout.jsx
 
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../src/AZ-LOGO.png';
-import Home from './Home';
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import Logo from '../src/media-logos/AZ-LOGO.png';
 
 export default function Layout() {
-  return(
-    <>
-    
-    <div id="top">
+  const [isOpen, setIsOpen] = useState(false);
 
-      <Link to="/" className="logo">
-        <img src={Logo} alt="Logo" className="logo" />
-      </Link>
+  const navLinkClass = ({ isActive }) =>
+    `nav-link ${isActive ? 'nav-link-active' : ''}`;
 
-      <nav>
-        <Link to="/" id="item">Home</Link>  
-        <Link to="/about" id="item">About Me</Link>   
-        <Link to="/services" id="item">Services</Link>  
-        <Link to="/projects" id="proj">My Projects</Link>   
-        <Link to="/contact" id="contact" >Contact Me</Link>
-      </nav>
+  return (
+    <header className="site-header">
+      <div className="container header-inner">
+        <Link to="/" className="brand">
+          <img src={Logo} alt="Aziz Syed Logo" className="brand-logo" />
+          <div className="brand-text">
+            <span className="brand-name">Aziz Syed</span>
+            <span className="brand-role">Software Engineer</span>
+          </div>
+        </Link>
 
-    </div>
+        <button
+          className="nav-toggle"
+          onClick={() => setIsOpen((prev) => !prev)}
+          aria-label="Toggle navigation menu"
+        >
+          <span className="nav-toggle-bar" />
+          <span className="nav-toggle-bar" />
+        </button>
 
-    </>
-  )
+        <nav className={`nav ${isOpen ? 'nav-open' : ''}`}>
+          <NavLink to="/" end className={navLinkClass} onClick={() => setIsOpen(false)}>
+            Home
+          </NavLink>
+          <NavLink to="/about" className={navLinkClass} onClick={() => setIsOpen(false)}>
+            About
+          </NavLink>
+          <NavLink to="/services" className={navLinkClass} onClick={() => setIsOpen(false)}>
+            Services
+          </NavLink>
+          <NavLink to="/projects" className={navLinkClass} onClick={() => setIsOpen(false)}>
+            Projects
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              `nav-link nav-link-primary ${isActive ? 'nav-link-active' : ''}`
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </NavLink>
+        </nav>
+      </div>
+    </header>
+  );
 }

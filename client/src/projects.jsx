@@ -1,92 +1,98 @@
-/* projects.jsx Aziz Syed 301322427 May 18th 2024*/
+// projects.jsx
 
 import React from 'react';
-import Portfolio from '../src/portfolioPic.png';
-import BugSmaherGame from '../src/bugSmasherGame.png';
-import ReviewSystem from '../src/reviewSys.png';
+import DineSmart from '../src/project-pics/dine-smart.png';
+import MovieShare from '../src/project-pics/MovieShare-AzizSyed.png';
+import CommunityPortal from '../src/project-pics/community-portal.png';
+import Portfolio from '../src/project-pics/portfolioPic.png';
 
-export default function Projects(){
+const projects = [
+  {
+    title: 'Restaurant Management Application',
+    image: DineSmart,
+    role: 'Full-stack Developer · Academic project',
+    description:
+      'Developed a full-stack restaurant management system to handle menus, orders, and customer interactions. ' +
+      'Designed an Angular frontend for day-to-day operations and implemented a Spring Boot backend for ' +
+      'authentication, business logic, and API endpoints. Used MongoDB for data storage and a combination of ' +
+      'REST and GraphQL (Apollo Server) to enable flexible communication between the client and server.',
+    tech: ['Angular', 'Agentic AI', 'JavaScript', 'TypeScript', 'Vue.Js',  'Spring Boot', 'Java', 'MongoDB', 'GraphQL', 'Apollo Server', 'REST APIs'],
+  },
+  {
+    title: 'ASP.NET Cloud Movie Hosting Platform',
+    image: MovieShare,
+    role: 'Back-end & Cloud Developer',
+    description:
+      'Built and deployed a cloud-hosted movie streaming platform supporting user authentication, playlists, and ' +
+      'content management. Deployed on AWS using EC2 for compute, S3 for media storage, CloudFront for content ' +
+      'delivery, and RDS/SQL Server for relational data. Focused on secure user management, optimized streaming ' +
+      'performance, and automated deployment using AWS CI/CD pipelines.',
+    tech: ['ASP.NET Core', 'C#', 'AWS EC2', 'AWS S3', 'AWS CloudFront', 'AWS RDS', 'SQL Server'],
+  },
+  {
+    title: 'Community Engagement Platform',
+    image: CommunityPortal,
+    role: 'Full-stack Developer',
+    description:
+      'Implemented a community platform with authentication and features for news, discussions, and help requests. ' +
+      'Used React with Vite and module federation for the frontend and a microservice architecture with Express, ' +
+      'Apollo Server, and MongoDB on the backend. Leveraged GraphQL to enable flexible querying and efficient data ' +
+      'access across services.',
+    tech: ['React', 'Next.js','Vite', 'Module Federation', 'Express', 'Apollo Server', 'MongoDB', 'GraphQL'],
+  },
+  {
+    title: 'Personal Portfolio Website',
+    image: Portfolio,
+    role: 'Front-end Developer',
+    description:
+      'Designed and deployed a personal portfolio website to showcase projects, technical skills, and experience. ' +
+      'Implemented a responsive React frontend with a clean, professional layout and deployed it using a cloud ' +
+      'hosting platform.',
+    tech: ['React', 'JavaScript', 'CSS', 'Node.js', 'Cloud deployment (Render/on-cloud)'],
+  },
+];
+
+export default function Projects() {
   return (
-    <>
-      <div id="wrapper">
+    <main className="container section">
+      <header className="section-header">
+        <h1 className="section-title">
+          Selected <span className="highlight">Projects</span>
+        </h1>
+        <p className="section-subtitle">
+          A selection of projects that reflect my experience with full-stack development, cloud
+          deployments, and modern web technologies.
+        </p>
+      </header>
 
-        <h1 id="pageTitle">Some of the <span id="highlight">Projects</span> I have done:</h1>
+      <div className="project-list">
+        {projects.map((project) => (
+          <article key={project.title} className="project-card">
+            <div className="project-image-wrapper">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+                loading="lazy"
+              />
+            </div>
 
-        <div class="grid">
+            <div className="project-body">
+              <h2 className="project-title">{project.title}</h2>
+              <p className="project-role">{project.role}</p>
+              <p className="project-description">{project.description}</p>
 
-          <div>
-            <h1>
-              1. My Portfolio
-              <br/>
-              
-            </h1>
-
-            <h2 id="projects-desc">
-                This Website acts as my <span id="highlight">Portfolio</span>.
-                <br/>
-                This was a Solo project I <span id="highlight">designed</span> and <span id="highlight">implemented </span> 
-                a portfolio website to <span id="highlight">showcase</span> my projects and <span id="highlight">skills</span>.
-            </h2>
-
-          </div>
-
-          <img src={Portfolio} alt="proj1" id="portfolio"/>
-
-        </div>
-
-
-        <br/>
-
-        <div class="grid">
-
-          
-            
-          <div id="Bug">
-            <h1>
-              2. Bug Smasher
-              <br/>
-            </h1>
-
-            <h2 id="projects-desc">
-            I <span id="highlight">developed</span> a bug smasher web game, handling <span id="highlight">concept</span>, coding, and <span id="highlight">design</span>. 
-            The result was a <span id="highlight">smooth</span>, engaging game that showcased my <span id="highlight">skills</span> in <span id="highlight">JavaScript</span>,
-            <span id="highlight"> HTML5</span>, and <span id="highlight">CSS3</span>.
-            </h2>
-
-          </div>
-
-          <img src={BugSmaherGame} alt="proj2" id="portfolio"/>
-
-        </div>
-
-        <br/>
-        <br/>
-
-        <div class="grid">
-
-          <div>
-            <h1>
-              3. Review System
-              <br/>
-              
-            </h1>
-
-            <h2 id="projects-desc">
-                I created a College Professor <span id="highlight"> review system</span>, handling all <span id="highlight"> aspects</span>. 
-                The result was a <span id="highlight"> user-friendly</span> platform for rating and <span id="highlight"> reviewing</span> professors, 
-                <span id="highlight"> showcasing</span> my web development <span id="highlight"> skills</span>.
-            </h2>
-
-          </div>
-
-          <img src={ReviewSystem} alt="proj3" id="portfolio"/>
-
-        </div>
-     
-
+              <ul className="pill-list">
+                {project.tech.map((tech) => (
+                  <li key={tech} className="pill">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </article>
+        ))}
       </div>
-    
-    
-    </>
-  )
+    </main>
+  );
 }

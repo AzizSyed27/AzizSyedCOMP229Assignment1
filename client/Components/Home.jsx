@@ -1,66 +1,93 @@
-/* Home.jsx Aziz Syed 301322427 May 18th 2024*/
+// Home.jsx
 
 import React from 'react';
-import Picture from '../src/aziz_picture-gray.png';
-import ClipArt from '../src/coding_clip_art.png';
+import Picture from '../src/person-pics/aziz_picture-gray.png';
 import { Link } from 'react-router-dom';
-import About from '../src/about'
 
-
-export default function Home(){
+export default function Home() {
   return (
-    <>
+    <main>
+      <section className="hero">
+        <div className="container hero-grid">
+          <div className="hero-text">
+            <p className="hero-kicker">Software Engineering Technology · Scarborough, ON</p>
+            <h1 className="hero-title">
+              Building practical, reliable, and user-focused software.
+            </h1>
+            <p className="hero-subtitle">
+              I’m <span className="highlight">Aziz Syed</span>, a Software Engineering and Technology
+              student at <br></br><span className="highlight-college">Centennial College</span>. I’ve built
+              hands-on experience in full-stack development, cloud computing, and emerging web
+              technologies. I enjoy turning real-world problems into scalable, maintainable software
+              solutions.
+            </p>
 
-    <div id="wrapper">
-    
-      <div class="grid">
+            <div className="hero-actions">
+              <Link to="/projects" className="btn btn-primary">
+                View Projects
+              </Link>
+              <Link to="/contact" className="btn btn-ghost">
+                Contact Me
+              </Link>
+            </div>
 
-        <h2 class="grid-item1">
-          Hello, My name is <span id="highlight">Aziz Syed</span>, 
-          <br/> 
-          a <span id="highlight">Software Engineer</span> at 
-          <br/> 
-          <span id="college"><span id="college1">CENTENNIAL</span> <span id="college2">COLLEGE</span></span>.
-          <br/> 
-          I am always in pursuit of 
-          <br/>
-          <span id="highlight">knowledge</span> and <span id="highlight">experiences</span>.
-          <br/> 
-          <br/>
-          I am a: 
-          <ul>
-            <li>Programmer</li>
-            <li>Developer</li>
-            <li>Designer</li>
-          </ul>
+            <div className="hero-metrics">
+              <div className="metric">
+                <span className="metric-value">Full-stack</span>
+                <span className="metric-label">React, Angular, Spring Boot</span>
+              </div>
+              <div className="metric">
+                <span className="metric-value">Cloud</span>
+                <span className="metric-label">AWS, Azure, GCP</span>
+              </div>
+              <div className="metric">
+                <span className="metric-value">DevOps</span>
+                <span className="metric-label">Docker, Kubernetes, Terraform</span>
+              </div>
+            </div>
+          </div>
 
-        </h2>
+          <div className="hero-photo-wrapper">
+            <div className="hero-photo-card">
+              <img src={Picture} alt="Aziz Syed" className="hero-photo" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <img src={Picture} alt="picture" id="picture" class="grid-item2"/>
-        
-      </div>
+      <section className="container section">
+        <div className="section-header">
+          <h2 className="section-title">What I focus on</h2>
+          <p className="section-subtitle">
+            I like to understand how systems work end-to-end and build software that is both
+            technically sound and easy to use.
+          </p>
+        </div>
 
-      <h1 id="goal">My Goal:</h1>
-
-      <div class="grid">
-        <img src={ClipArt} alt="clipArt"/>
-
-        <h2 class="grid-item1">
-        <br/>
-          My goal is to <span id="highlight">innovate</span> and create <span id="highlight">impactful</span> software, 
-          uphold <span id="highlight">ethical</span> standards,
-          and address real-world <span id="highlight">challenges</span> through continuous <span id="highlight">learning</span>.
-          <br/>
-          Learn More <span id="highlight">About Me </span><Link to="/about" id="linkAbout">Here</Link>.   
-
-          </h2>
-
-      </div>
-      <br/>
-      <br/>
-
-    </div>
-    </>
-  )
-  
+        <div className="feature-grid">
+          <article className="feature-card">
+            <h3>Engineering Mindset</h3>
+            <p>
+              I prioritize clarity, testability, and scalability—using clean architecture and modern
+              development practices to build code that teams can understand and extend.
+            </p>
+          </article>
+          <article className="feature-card">
+            <h3>Real-World Applications</h3>
+            <p>
+              From restaurant management systems to cloud-hosted streaming platforms and community
+              portals, I focus on solving practical problems with full-stack solutions.
+            </p>
+          </article>
+          <article className="feature-card">
+            <h3>Continuous Growth</h3>
+            <p>
+              I stay active through coursework, peer mentoring, coding competitions, and team
+              projects, always looking for opportunities to learn new tools and techniques.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  );
 }

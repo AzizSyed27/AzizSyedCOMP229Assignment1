@@ -1,103 +1,88 @@
-/* services.jsx Aziz Syed 301322427 May 18th 2024*/
+// services.jsx
 
 import React from 'react';
-import CSharpLogo from '../src/cSharpLogo.png';
-import CLogo from '../src/C_Logo.png';
-import JavaLogo from '../src/JavaLogo.png';
-import HTMLLogo from '../src/HTMLLogo.png';
-import CSSLogo from '../src/CSS3_logo.png';
-import PythonLogo from '../src/pythonLogo.png';
-import SQLLogo from '../src/sqlLogo.png';
-import JavaScriptLogo from '../src/javaScriptLogo.png';
-import LinuxLogo from '../src/linuxLogo.png';
-import ReactLogo from '../src/reactLogo.png';
 
+const skillGroups = [
+  {
+    title: 'Programming Languages',
+    description:
+      'Comfortable working across multiple languages and paradigms, from systems-level code to web and scripting.',
+    items: ['Python', 'Java', 'JavaScript', 'TypeScript', 'C', 'C++', 'C#', 'Rust', 'PHP'],
+  },
+  {
+    title: 'Web & Application Development',
+    description:
+      'Experience building full-stack applications, APIs, and modern web interfaces using established frameworks.',
+    items: [
+      'React',
+      'Angular',
+      'HTML5 / CSS3',
+      'Node.js',
+      'Express',
+      'Spring Boot',
+      'ASP.NET Core',
+      'REST APIs',
+      'GraphQL',
+      'Apollo Server',
+      'Microservice architectures',
+    ],
+  },
+  {
+    title: 'Databases',
+    description:
+      'Work with both relational and NoSQL databases to design schemas, write queries, and optimize data access.',
+    items: ['PostgreSQL', 'MySQL', 'SQL Server', 'Oracle', 'MongoDB', 'NoSQL data modeling'],
+  },
+  {
+    title: 'Cloud & DevOps',
+    description:
+      'Hands-on exposure to cloud platforms and DevOps tools used to deploy, monitor, and scale applications.',
+    items: ['AWS', 'Azure', 'Google Cloud', 'Docker', 'Kubernetes', 'Jenkins', 'Terraform', 'CI/CD'],
+  },
+  {
+    title: 'Testing & Quality',
+    description:
+      'Use of automated testing tools and practices to improve reliability and catch issues earlier in development.',
+    items: ['JUnit', 'PyTest', 'Selenium', 'Cypress', 'Unit & integration testing'],
+  },
+  {
+    title: 'Methods & Ways of Working',
+    description:
+      'Experience collaborating in structured environments with modern software delivery practices.',
+    items: ['Agile', 'Scrum', 'DevOps', 'CI/CD pipelines', 'Waterfall', 'Prototyping'],
+  },
+];
 
-export default function Services(){
+export default function Services() {
   return (
-    <>
-      <div id="wrapper">
+    <main className="container section">
+      <header className="section-header">
+        <h1 className="section-title">
+          Technical <span className="highlight">Capabilities</span>
+        </h1>
+        <p className="section-subtitle">
+          A snapshot of the technologies and areas I’m actively building experience in as a
+          software engineer.
+        </p>
+      </header>
 
-
-        <h1 id="pageTitle">Some of the <span id="highlight">Services</span> I can provide:</h1>
-        
-        <div class="grid2">
-
-        <div class="grid-item3">
-          <h2 id="serviceTitle"><img src={CLogo} alt="c" id="leftLogo"/>  C / C# / C++  <img src={CSharpLogo} alt="c#" id="rightLogo"/></h2>
-
-          <h2 id="service">
-            <span id="highlight2">Proficient</span> in developing <span id="highlight2">high-performance </span> 
-            applications with robust <span id="highlight2">system-level</span> programming.
-          </h2>
-        </div>
-
-        <div class="grid-item3">
-          <h2 id="serviceTitle"><img src={JavaLogo} alt="javaLogo" id="singleLogo"/>Java</h2>
-
-          <h2 id="service">
-            <span id="highlight2">Skilled</span> in building scalable and <span id="highlight2">secure </span>
-            enterprise-level applications with <span id="highlight2">Java</span>.
-          </h2>
-        </div>
-
-        <div class="grid-item3">
-          <h2 id="serviceTitle"><img src={HTMLLogo} alt="htmlLogo" id="leftLogo"/>  HTML5 / CSS3  <img src={CSSLogo} alt="cssLogo" id="rightLogo"/></h2>
-
-          <h2 id="service">
-            <span id="highlight2">Expert</span> in crafting <span id="highlight2">responsive </span> 
-            and visually <span id="highlight2">appealing</span> web <span id="highlight2">interfaces</span> using <span id="highlight2">HTML5 </span> 
-            and <span id="highlight2">CSS3</span>.
-          </h2>
-        </div>  
-
-        <div class="grid-item3">
-          <h2 id="serviceTitle"><img src={PythonLogo} alt="pythonLogo" id="singleLogo"/>Python</h2>
-          <h2 id="service">
-          <span id="highlight2">Experienced</span> in writing <span id="highlight2">efficient</span>, readable, and <span id="highlight2">versatile </span>
-           code for <span id="highlight2">web development</span> and <span id="highlight2">data analysis</span>.
-          </h2>
-        </div>
-
-        <div class="grid-item3">
-          <h2 id="serviceTitle"><img src={SQLLogo} alt="sqlLogo" id="singleLogo"/>SQL</h2>
-          <h2 id="service">
-            <span id="highlight2">Adept</span> at designing and <span id="highlight2">managing</span> relational <span id="highlight2">databases </span>
-            to ensure data <span id="highlight2">integrity</span> and <span id="highlight2">efficiency</span>.
-          </h2>
-        </div>
-
-        <div class="grid-item3">
-          <h2 id="serviceTitle"><img src={JavaScriptLogo} alt="javaScriptLogo" id="singleLogo"/>JavaScript</h2>
-          <h2 id="service">
-            <span id="highlight2">Proficient</span> in creating <span id="highlight2">dynamic </span> 
-            and <span id="highlight2">interactive</span> web <span id="highlight2">applications</span> with <span id="highlight2">JavaScript</span>.
-          </h2>
-        </div>  
-
-        <div class="grid-item3">
-          <h2 id="serviceTitle"><img src={LinuxLogo} alt="linuxLogo" id="singleLogo"/>Unix / Linux</h2>
-          <h2 id="service">
-            <span id="highlight2">Experienced</span> in using <span id="highlight2">Unix/Linux terminal </span> 
-            for system <span id="highlight2">administration</span> and <span id="highlight2">automation</span> tasks.
-          </h2>
-        </div>  
-
-        <div class="grid-item3">
-          <h2 id="serviceTitle"><img src={ReactLogo} alt="linuxLogo" id="singleLogo"/>React</h2>
-          <h2 id="service">
-            <span id="highlight2">Skilled</span> in <span id="highlight2">developing </span> 
-            modern, <span id="highlight2">user-friendly</span> front-end <span id="highlight2">applications </span> 
-            with <span id="highlight2">React</span>.
-          </h2>
-        </div>  
-
-        </div>
-     
-
+      <div className="cards-grid">
+        {skillGroups.map((group) => (
+          <article key={group.title} className="card">
+            <div className="card-header">
+              <h2 className="card-title">{group.title}</h2>
+            </div>
+            <p className="card-description">{group.description}</p>
+            <ul className="pill-list">
+              {group.items.map((item) => (
+                <li key={item} className="pill">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
-    
-    
-    </>
-  )
+    </main>
+  );
 }
