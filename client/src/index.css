@@ -392,15 +392,22 @@ p {
   grid-template-columns: minmax(0, 2.1fr) minmax(0, 3fr);
   gap: 2.5rem;
   align-items: flex-start;
+  
 }
 
 .about-photo-wrapper {
-  max-width: 260px;
+  padding: 0.6rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: radial-gradient(circle at top left, #eff6ff, #ffffff);
+  box-shadow: var(--shadow-soft);
+  max-width: 400px;
 }
 
 .about-photo {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
+  
 }
 
 .about-content p + p {

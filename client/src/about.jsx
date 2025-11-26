@@ -1,7 +1,7 @@
 // about.jsx
 
 import React from 'react';
-import Picture from '../src/person-pics/sideShot.png';
+import Picture from '../src/person-pics/aziz_top_shot_2.jpeg';
 import Resume from '../src/person-pics/AzizSyedResume.pdf';
 
 export default function About() {

@@ -1,7 +1,7 @@
 // Home.jsx
 
 import React from 'react';
-import Picture from '../src/person-pics/aziz_picture-gray.png';
+import Picture from '../src/person-pics/aziz_top_shot.jpeg';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
