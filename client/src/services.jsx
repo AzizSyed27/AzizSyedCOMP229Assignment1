@@ -18,12 +18,16 @@ const skillGroups = [
       'Angular',
       'HTML5 / CSS3',
       'Node.js',
+      'NestJS',
+      'Flask',
+      'Django',
       'Express',
       'Spring Boot',
       'ASP.NET Core',
       'REST APIs',
       'GraphQL',
       'Apollo Server',
+      'AI integration',
       'Microservice architectures',
     ],
   },
@@ -49,7 +53,7 @@ const skillGroups = [
     title: 'Methods & Ways of Working',
     description:
       'Experience collaborating in structured environments with modern software delivery practices.',
-    items: ['Agile', 'Scrum', 'DevOps', 'CI/CD pipelines', 'Waterfall', 'Prototyping'],
+    items: ['Agile', 'Scrum', 'DevOps', 'Trello', 'Asana', 'Jira', 'MS Teams', 'CI/CD pipelines', 'Waterfall', 'Prototyping', 'Proof of Concept', 'Confluence' ],
   },
 ];
 

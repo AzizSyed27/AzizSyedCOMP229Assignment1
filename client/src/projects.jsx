@@ -16,12 +16,12 @@ const projects = [
       'Designed an Angular frontend for day-to-day operations and implemented a Spring Boot backend for ' +
       'authentication, business logic, and API endpoints. Used MongoDB for data storage and a combination of ' +
       'REST and GraphQL (Apollo Server) to enable flexible communication between the client and server.',
-    tech: ['Angular', 'Agentic AI', 'JavaScript', 'TypeScript', 'Vue.Js',  'Spring Boot', 'Java', 'MongoDB', 'GraphQL', 'Apollo Server', 'REST APIs'],
+    tech: ['Angular', 'OpenAI (Agentic AI)', 'JavaScript', 'TypeScript', 'Vue.Js',  'Spring Boot', 'Java', 'MongoDB', 'GraphQL', 'Apollo Server', 'REST APIs'],
   },
   {
-    title: 'ASP.NET Cloud Movie Hosting Platform',
+    title: 'ASP.NET Cloud Movie Hosting Platform ',
     image: MovieShare,
-    role: 'Back-end & Cloud Developer',
+    role: 'Back-end & Cloud Developer · Personal project',
     description:
       'Built and deployed a cloud-hosted movie streaming platform supporting user authentication, playlists, and ' +
       'content management. Deployed on AWS using EC2 for compute, S3 for media storage, CloudFront for content ' +
@@ -30,20 +30,20 @@ const projects = [
     tech: ['ASP.NET Core', 'C#', 'AWS EC2', 'AWS S3', 'AWS CloudFront', 'AWS RDS', 'SQL Server'],
   },
   {
-    title: 'Community Engagement Platform',
+    title: 'Community Engagement Platform ',
     image: CommunityPortal,
-    role: 'Full-stack Developer',
+    role: 'Full-stack Developer · Academic project',
     description:
-      'Implemented a community platform with authentication and features for news, discussions, and help requests. ' +
-      'Used React with Vite and module federation for the frontend and a microservice architecture with Express, ' +
-      'Apollo Server, and MongoDB on the backend. Leveraged GraphQL to enable flexible querying and efficient data ' +
-      'access across services.',
-    tech: ['React', 'Next.js','Vite', 'Module Federation', 'Express', 'Apollo Server', 'MongoDB', 'GraphQL'],
+      'Developed a full-stack community engagement platform using a micro-frontend architecture to manage authentication, news posts,' +
+      'help requests, and resident interactions. Built independent React MFEs for user authentication and community features,' +
+      'onnected through an Apollo GraphQL Federation gateway with Node.js microservices. Integrated a Gemini-powered AI assistant  ' +
+      'using RAG to analyze community discussions, provide intelligent answers, and enhance user support within the platform.',
+    tech: ['React', 'Gemini-AI (RAG)', 'Langchain', 'Next.js','Vite', 'Module Federation', 'Express', 'Apollo Server', 'MongoDB', 'GraphQL'],
   },
   {
-    title: 'Personal Portfolio Website',
+    title: 'Personal Portfolio Website ',
     image: Portfolio,
-    role: 'Front-end Developer',
+    role: 'Front-end Developer · Personal project',
     description:
       'Designed and deployed a personal portfolio website to showcase projects, technical skills, and experience. ' +
       'Implemented a responsive React frontend with a clean, professional layout and deployed it using a cloud ' +
