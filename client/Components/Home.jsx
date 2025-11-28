@@ -68,7 +68,7 @@ export default function Home() {
           <article className="feature-card">
             <h3>Engineering Mindset</h3>
             <p>
-              I prioritize clarity, testability, and scalability—using clean architecture and modern
+              I prioritize clarity, testability, and scalability, using clean architecture and modern
               development practices to build code that teams can understand and extend.
             </p>
           </article>

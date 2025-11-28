@@ -35,7 +35,7 @@ export default function About() {
             I’ve worked with technologies such as <strong>React, Angular, Node.js, Spring Boot,
             ASP.NET Core, GraphQL, MongoDB,</strong> and relational databases. I enjoy building
             applications that are both technically solid and user-focused, and I’m comfortable
-            working across the stack—from UI to database and deployment.
+            working across the stack, from UI to database and deployment.
           </p>
 
           <p>

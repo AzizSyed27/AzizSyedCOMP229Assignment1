@@ -34,9 +34,9 @@ const projects = [
     image: CommunityPortal,
     role: 'Full-stack Developer · Academic project',
     description:
-      'Developed a full-stack community engagement platform using a micro-frontend architecture to manage authentication, news posts,' +
+      'Developed a full-stack community engagement platform using a micro-frontend architecture to manage authentication, news posts, ' +
       'help requests, and resident interactions. Built independent React MFEs for user authentication and community features,' +
-      'onnected through an Apollo GraphQL Federation gateway with Node.js microservices. Integrated a Gemini-powered AI assistant  ' +
+      ' connected through an Apollo GraphQL Federation gateway with Node.js microservices. Integrated a Gemini-powered AI assistant  ' +
       'using RAG to analyze community discussions, provide intelligent answers, and enhance user support within the platform.',
     tech: ['React', 'Gemini-AI (RAG)', 'Langchain', 'Next.js','Vite', 'Module Federation', 'Express', 'Apollo Server', 'MongoDB', 'GraphQL'],
   },
