@@ -16,7 +16,7 @@ export default function Home() {
             </h1>
             <p className="hero-subtitle">
               I’m <span className="highlight">Aziz Syed</span>, a Software Engineering and Technology
-              student at <br></br><span className="highlight-college">Centennial College</span>. I’ve built
+              graduate from <br></br><span className="highlight-college">Centennial College</span>. I’ve built
               hands-on experience in full-stack development, cloud computing, and emerging web
               technologies. I enjoy turning real-world problems into scalable, maintainable software
               solutions.
@@ -75,8 +75,8 @@ export default function Home() {
           <article className="feature-card">
             <h3>Real-World Applications</h3>
             <p>
-              From restaurant management systems to cloud-hosted streaming platforms and community
-              portals, I focus on solving practical problems with full-stack solutions.
+              From Gym websites, member and admin portals, to cloud-hosted streaming platforms and restaurant management systems,
+               I focus on solving practical problems with full-stack solutions.
             </p>
           </article>
           <article className="feature-card">

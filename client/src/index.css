@@ -738,3 +738,10 @@ p {
   font-size: 0.92rem;
   line-height: 1.55;
 }
+
+.project-link {
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}

@@ -5,10 +5,42 @@ import DineSmart from '../src/project-pics/dine-smart.png';
 import MovieShare from '../src/project-pics/MovieShare-AzizSyed.png';
 import CommunityPortal from '../src/project-pics/community-portal.png';
 import Portfolio from '../src/project-pics/portfolioPic.png';
+import GymNet from '../src/project-pics/gymnet.png';
 
 const projects = [
   {
-    title: 'Restaurant Management Application',
+    title: 'GymNet - Gym Operations, Member, and Admin Management System',
+    image: GymNet,
+    role: 'Full-stack Developer · Personal project',
+    link: "https://gym-net-five.vercel.app/",
+    description:
+    'Designed and built a full-stack gym management platform that mirrors real-world gym operations, including ' +
+    'membership tiers, personal training session packs, bookings, attendance tracking, and operational reporting. ' +
+    'Implemented a modern React + TypeScript frontend for public pages, member, trainer, and admin dashboards, ' +
+    'and developed a Spring Boot backend enforcing business rules such as access control, session consumption, ' +
+    'overlap prevention, and attendance states (completed, cancelled, no-show). ' +
+    'Integrated JWT-based authentication with role-based routing, Flyway-managed database migrations, ' +
+    'and PostgreSQL persistence, with deployments using Neon (database), Render (backend), and Vercel (frontend).',
+    tech: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS',
+      'Spring Boot',
+      'Java',
+      'JWT Authentication',
+      'PostgreSQL',
+      'Flyway',
+      'REST APIs',
+      'Docker',
+      'Neon (Postgres)',
+      'Render',
+      'Vercel',
+      'Postman'
+    ],
+  },
+  {
+    title: 'DineSmart - Restaurant Management Application',
     image: DineSmart,
     role: 'Full-stack Developer · Academic project',
     description:
@@ -19,7 +51,7 @@ const projects = [
     tech: ['Angular', 'OpenAI (Agentic AI)', 'JavaScript', 'TypeScript', 'Vue.Js',  'Spring Boot', 'Java', 'MongoDB', 'GraphQL', 'Apollo Server', 'REST APIs'],
   },
   {
-    title: 'ASP.NET Cloud Movie Hosting Platform ',
+    title: 'MovieShare - ASP.NET Cloud Movie Hosting Platform ',
     image: MovieShare,
     role: 'Back-end & Cloud Developer · Personal project',
     description:
@@ -30,7 +62,7 @@ const projects = [
     tech: ['ASP.NET Core', 'C#', 'AWS EC2', 'AWS S3', 'AWS CloudFront', 'AWS RDS', 'SQL Server'],
   },
   {
-    title: 'Community Engagement Platform ',
+    title: 'CommConnect - Community Engagement Platform ',
     image: CommunityPortal,
     role: 'Full-stack Developer · Academic project',
     description:
@@ -80,8 +112,11 @@ export default function Projects() {
             <div className="project-body">
               <h2 className="project-title">{project.title}</h2>
               <p className="project-role">{project.role}</p>
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
+              )}
               <p className="project-description">{project.description}</p>
-
+              
               <ul className="pill-list">
                 {project.tech.map((tech) => (
                   <li key={tech} className="pill">
