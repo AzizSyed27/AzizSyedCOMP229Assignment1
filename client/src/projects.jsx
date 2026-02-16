@@ -15,14 +15,14 @@ const projects = [
     role: 'Full-stack Developer · Non-profit project',
     link: 'https://projectsxprojects.ca/', 
     description:
-      'Designed and built the official Projects X Projects (PXP) non-profit platform to showcase initiatives, ' +
-      'publish impact updates, and convert supporters through a clean, mobile-first experience. ' +
-      'Implemented a React + Vite frontend with public pages for projects, events, and donation flows, ' +
-      'and developed a Spring Boot backend exposing REST APIs for managing content, media, and subscriber workflows. ' +
-      'Integrated Cloudflare R2 object storage for scalable image uploads and delivery, and implemented Stripe Checkout ' +
-      'to securely process donations without storing sensitive payment details. ' +
-      'Deployed the full stack on Render (frontend, backend, and PostgreSQL), with Flyway-managed database migrations, ' +
-      'JWT-based admin authentication, and role-based access for content management.',
+    'Built and launched the official Projects by the Projects (PXP) production non-profit platform used by the public to explore initiatives, subscribe to updates, ' +
+    'and donate securely. ' +
+    'Implemented a React + Vite frontend with public pages for projects, events, and donation flows, ' +
+    'and developed a Spring Boot backend exposing REST APIs for managing content, media, and supporter subscriptions. ' +
+    'Integrated Brevo SMTP to power newsletter signups and event notifications, Cloudflare R2 object storage for scalable ' +
+    'image uploads and delivery, and Stripe Checkout to securely process donations without storing sensitive payment details. ' +
+    'Deployed the full stack on Render (frontend, backend, and PostgreSQL), with Flyway-managed database migrations, ' +
+    'JWT-based admin authentication, and role-based access for content management.',
     tech: [
       'React',
       'JavaScript',
