@@ -6,8 +6,39 @@ import MovieShare from '../src/project-pics/MovieShare-AzizSyed.png';
 import CommunityPortal from '../src/project-pics/community-portal.png';
 import Portfolio from '../src/project-pics/portfolioPic.png';
 import GymNet from '../src/project-pics/gymnet.png';
+import ProjectsXProjects from '../src/project-pics/pxp-img.png';
 
 const projects = [
+  {
+    title: 'Projects X Projects - Non-Profit Charity Platform',
+    image: ProjectsXProjects, 
+    role: 'Full-stack Developer · Non-profit project',
+    link: 'https://projectsxprojects.ca/', 
+    description:
+      'Designed and built the official Projects X Projects (PXP) non-profit platform to showcase initiatives, ' +
+      'publish impact updates, and convert supporters through a clean, mobile-first experience. ' +
+      'Implemented a React + Vite frontend with public pages for projects, events, and donation flows, ' +
+      'and developed a Spring Boot backend exposing REST APIs for managing content, media, and subscriber workflows. ' +
+      'Integrated Cloudflare R2 object storage for scalable image uploads and delivery, and implemented Stripe Checkout ' +
+      'to securely process donations without storing sensitive payment details. ' +
+      'Deployed the full stack on Render (frontend, backend, and PostgreSQL), with Flyway-managed database migrations, ' +
+      'JWT-based admin authentication, and role-based access for content management.',
+    tech: [
+      'React',
+      'JavaScript',
+      'Vite',
+      'CSS',
+      'Spring Boot',
+      'Java',
+      'PostgreSQL',
+      'Flyway',
+      'REST APIs',
+      'JWT Authentication',
+      'Stripe (Checkout)',
+      'Cloudflare R2',
+      'Render'
+    ],
+  },
   {
     title: 'GymNet - Gym Operations, Member, and Admin Management System',
     image: GymNet,
