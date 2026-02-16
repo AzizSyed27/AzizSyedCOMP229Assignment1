@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'Projects X Projects - Non-Profit Charity Platform',
     image: ProjectsXProjects, 
-    role: 'Full-stack Developer · Non-profit project',
+    role: 'Full-stack Developer · Non-Profit Project',
     link: 'https://projectsxprojects.ca/', 
     description:
     'Built and launched the official Projects by the Projects (PXP) production non-profit platform used by the public to explore initiatives, subscribe to updates, ' +
@@ -42,7 +42,7 @@ const projects = [
   {
     title: 'GymNet - Gym Operations, Member, and Admin Management System',
     image: GymNet,
-    role: 'Full-stack Developer · Personal project',
+    role: 'Full-stack Developer · Business Project',
     link: "https://gym-net-five.vercel.app/",
     description:
     'Designed and built a full-stack gym management platform that mirrors real-world gym operations, including ' +
